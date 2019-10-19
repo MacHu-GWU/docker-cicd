@@ -12,6 +12,7 @@ RUN \
     && apt-get install -y --no-install-recommends jq \
     && apt-get install -y --no-install-recommends make \
     && apt-get install -y --no-install-recommends git \
+    && rm -rf /var/lib/apt/lists/* \
     # install packer
     && export PACKER_VERSION="1.4.4" \
     && wget "https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip" -P "${HOME}" \
