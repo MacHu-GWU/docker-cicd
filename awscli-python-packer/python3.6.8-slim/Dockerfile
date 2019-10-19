@@ -18,4 +18,4 @@ RUN \
     && wget "https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip" -P "${HOME}" \
     && unzip "${HOME}/packer_${PACKER_VERSION}_linux_amd64.zip" -d "${HOME}" \
     && mv "${HOME}/packer" "/usr/local/bin" \
-    && rm "${HOME}/packer_${PACKER_VERSION}_linux_amd64.zip" \
+    && rm "${HOME}/packer_${PACKER_VERSION}_linux_amd64.zip"
